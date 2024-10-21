@@ -23,7 +23,8 @@ Before setting up the project, ensure you have the following tools installed:
 ### Step 1: Clone the Repository
 ### Step 2: setup wildfly on your machine , here i used intllij idea .
 ### step 3: configure the admin setup in wildfly . you will endup getting a username + pass . refre to wildfly doc for this . 
-### step 4 : run the project + you should see something like this in your server logs 
+### step 4 : run mvn clean package , this should generate a .jar file that you need to deploy to you wildfly deployement => you can ask chat gpt how to do that in intllij idea 
+### step 5 : run the project + you should see something like this in your server logs 
 `WFLYEJB0473: JNDI bindings for session bean named 'HelloImpl' in deployment unit 'deployment "EJB-1.0-SNAPSHOT.jar"' are as follows:
 
 	java:global/EJB-1.0-SNAPSHOT/HelloImpl!org.example.Hello
